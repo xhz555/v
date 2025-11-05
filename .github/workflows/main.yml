@@ -45,7 +45,7 @@ jobs:
           git commit -m "Automatic update"
           # 关键修改3：使用 GITHUB_TOKEN 进行身份验证[1,5](@ref)
           git remote set-url origin https://github-actions[bot]:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-          git push origin v # 请确保这里的 'main' 是您的实际分支名
+          git push origin main # 请确保这里的 'main' 是您的实际分支名
         else
           echo "No changes detected, skipping commit."
         fi
