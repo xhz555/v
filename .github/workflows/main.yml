@@ -38,8 +38,8 @@ jobs:
     - name: Commit and push changes
       run: |
         # 将 --global 改为 --local，仅对当前仓库生效
-        git config --local user.email "tianshideyou@proton.me"
-        git config --local user.name "tianshipapa"
+        git config --local user.email "xhz2008@proton.me"
+        git config --local user.name "xhz2008"
         if [ -n "$(git status --porcelain)" ]; then
           git add ip.txt
           git commit -m "Automatic update"
